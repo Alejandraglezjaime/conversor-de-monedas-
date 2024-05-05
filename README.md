@@ -22,7 +22,7 @@ En este proyecto encontraras:
 - [ ] **Soporte para Más Monedas**. Amplía la lista de monedas disponibles para la elección, permitiendo a los usuarios convertir entre una variedad aún mayor de opciones monetarias.
 - [ ] **Registros con Marca de Tiempo** Utiliza las funciones de la biblioteca java.time para crear registros que registren las conversiones realizadas, incluyendo información sobre qué monedas se convirtieron y en qué momento.
 
-
+Encontraras el proyecto en la carpeta _conversorDeMonedas_
 ## Importa la biblioteca Gson en IntelliJ
 
     1.- Dentro de file selecciona "Project settings"  y posterior la opcióm "Modules"
