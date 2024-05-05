@@ -49,5 +49,44 @@ Al ejecutar el programa podemos observar un menú despegable de las opciones que
 
 ![Imagen menu](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/imagenInicio.jpg?raw=true)
 
-A continuación observamos el funcionamiento de conversión, cuando el usuario elige convertir de dólar a peso argentino, de peso mexicano a dólar, saber el total de conversiones realizadas.
-![Imagen dolar a ars](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/evidencia1.jpg?raw=true) ![Imagen mxn a usdu](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/evidencia2.jpg?raw=true) ![Imagen total operaciones](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/evidencia3.jpg?raw=true)
+A continuación observamos el funcionamiento de conversión, cuando el usuario elige convertir de dólar a peso argentino, de peso mexicano a dólar, saber el total de conversiones realizadas, y observar el historial.
+![Imagen dolar a ars](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/evidencia1.jpg?raw=true) 
+![Imagen mxn a usdu](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/evidencia2.jpg?raw=true) 
+![Imagen total operaciones](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/evidencia3.jpg?raw=true) 
+![Imagen historial](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/historialConversiones.jpg?raw=true)
+
+### EXCEPCIONES
+En nuestro código, podemos observar el manejo de la excepción _**NumberFormatException**_ que se activará cuando el usuario ingrese datos de tipo String, como "UNO", en lugar de números válidos. Además, en muchos países, en lugar de utilizar el punto decimal para separar la parte entera de la fraccionaria en números flotantes, se utiliza la coma. Por lo tanto, si el usuario ingresa "8,36" en lugar de "8.36", también activará esta excepción, ya que solo se espera la entrada de números enteros o flotantes.   
+
+![excepcion NumberFormatException](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/errorIngresoNumero.jpg?raw=true)
+
+En el código, se implemento una lista que contiene los datos a buscar en la API. Si alguno de los datos en esta lista está incorrecto o no coincide con los valores esperados, se activará la excepción _**RuntimeException.**_ esta excepción se utilizará para notificar al usuario que no se ha encontrado la tasa de conversión para una moneda específica.
+
+En caso de que se active la excepción RuntimeException, se enviará el siguiente error:
+
+![excepcion RuntimeException](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/errorIngresoDatos.jpg?raw=true)
+
+Este mensaje indicará al usuario que la tasa de conversión para una moneda específica no se pudo encontrar, y especificará cuál es esa moneda. El código no permitirá continuar con la ejecución hasta que se corrija el dato incorrecto en la lista de búsqueda.
+
+### Aplicación JSON 
+
+Al finalizar la ejecución del programa, se generarán dos archivos en formato JSON:
+
+#### Archivo de Tasas de Conversión
+
+El primer archivo contiene la información de las tasas de conversión. Este archivo presenta los códigos de moneda y sus respectivos valores de conversión.
+
+![archivo conversion](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/JsonConversiones.jpg?raw=true)
+
+#### Archivo de Historial de Conversiones
+
+El segundo archivo JSON muestra un registro del historial de conversiones realizadas durante la ejecución del programa. Cada vez que se ejecuta el programa, este archivo se sobrescribe con los datos actualizados del historial, además de guardar el total de conversiones realizadas.
+
+![archivo historial](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/JsonHistorial.jpg?raw=true)
+
+Estos archivos proporcionan una visión detallada de las tasas de conversión actuales y un registro completo de las conversiones realizadas en cada ejecución del programa.
+
+## AUTOR
+© Alejandra Gonzalez 
+
+![imagen salida](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/finPrograma.jpg?raw=true)
