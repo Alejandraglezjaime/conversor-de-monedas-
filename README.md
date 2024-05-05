@@ -1,4 +1,4 @@
-# $ CONVERSOR DE MONEDAS CON BASE EL DOLAR $
+# $ CONVERSOR DE MONEDAS CON BASE AL DOLAR $
 ![Imagen dolar](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/dinero.jpg?raw=true)
 
 ## Descripción del proyecto 
@@ -23,7 +23,7 @@ En este proyecto encontraras:
 - [ ] **Registros con Marca de Tiempo** Utiliza las funciones de la biblioteca java.time para crear registros que registren las conversiones realizadas, incluyendo información sobre qué monedas se convirtieron y en qué momento.
 
 
-### Importa la biblioteca Gson en IntelliJ
+## Importa la biblioteca Gson en IntelliJ
 
     1.- Dentro de file selecciona "Project settings"  y posterior la opcióm "Modules"
     
@@ -42,3 +42,12 @@ Ahora, la biblioteca Gson está agregada a tu proyecto y puedes comenzar a utili
 _NOTA: El archivo JSon lo dejo dentro de la carpeta conversor de monedas_
 
 ![Importacion Json](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/imporacion%20json.png?raw=true)
+
+## RESULTADOS
+
+Al ejecutar el programa podemos observar un menú despegable de las opciones que podemos escoger para convertir las monedas, entre ellas observamos el dolar, peso argentino, real brasileño, peso chileno, peso colombiano, peso mexicano, además de poder visualizar en la consola el historial de conversiones realizadas y el total de operaciones, además de ocupar un bucle que se ejecutara hasta que el usuario tecle la opcion _salir_, si el usuario teclea cualquier número que no esta en nuestra lista voolvera a mandar el menú despegable.
+
+![Imagen menu](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/imagenInicio.jpg?raw=true)
+
+A continuación observamos el funcionamiento de conversión, cuando el usuario elige convertir de dólar a peso argentino, de peso mexicano a dólar, saber el total de conversiones realizadas.
+![Imagen dolar a ars](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/evidencia1.jpg?raw=true) ![Imagen mxn a usdu](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/evidencia2.jpg?raw=true) ![Imagen total operaciones](https://github.com/Alejandraglezjaime/conversor-de-monedas-/blob/master/ConversorDeMonedas/imagenes/evidencia3.jpg?raw=true)
