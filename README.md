@@ -6,6 +6,8 @@
 Vivimos en un mundo globalizado y conocer la cotización de diferentes monedas es algo muy importante y valioso para nuestro día a día.
 Esta proyecto fué creado para el Challenge en ONE (Oracle Next Eucation) en la formación de Java orientado a objetos G6 - ONE 2024.
 
+**NOTA: Esta desarrollado en java para funcionar unicamente en consola** 
+
 En este proyecto encontraras:
 
 - [x] **API de tasas de cambio**
@@ -15,14 +17,11 @@ En este proyecto encontraras:
 - [x] **Análisis de las respuestas en formato JSON**
 - [x] **Conversión de las monedas**
 - [x] **Interacción con el usuario**
-
-### Extras 
-
 - [x] **Historial de Conversiones**. Agrega la capacidad de mostrar el historial de las últimas conversiones realizadas, brindando a los usuarios una visión completa de sus actividades.
-- [ ] **Soporte para Más Monedas**. Amplía la lista de monedas disponibles para la elección, permitiendo a los usuarios convertir entre una variedad aún mayor de opciones monetarias.
-- [ ] **Registros con Marca de Tiempo** Utiliza las funciones de la biblioteca java.time para crear registros que registren las conversiones realizadas, incluyendo información sobre qué monedas se convirtieron y en qué momento.
 
-Encontraras el proyecto en la carpeta _conversorDeMonedas_
+
+¡¡¡ NOTA: Encontraras el proyecto en la carpeta _conversorDeMonedas_
+
 ## Importa la biblioteca Gson en IntelliJ
 
     1.- Dentro de file selecciona "Project settings"  y posterior la opcióm "Modules"
